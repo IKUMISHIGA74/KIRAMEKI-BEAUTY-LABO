@@ -1,0 +1,403 @@
+html { 
+    font-size: 62.5%;
+}
+    
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* SP記述 */
+/* ヘッダー */
+@media screen and (max-width: 767px) {
+    .header {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: #FFFFFF;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+    .header__logo img {
+        width: 71.5px;
+        height: 39px;
+        margin: 15% 0 0 18%;
+    }
+    .header__btn {
+        display: flex;
+        justify-content: center;
+    }
+    .header__btn--inquiry {
+        height: 31px;
+        width: 107px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        border-radius: 30px;
+        margin:13% 0 0 -18%;
+        padding: 8px 0 0 3px;
+        background-color: #FA7DA3;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 1.2rem;
+        letter-spacing: 0.03em;
+    }
+    .icon-inquiry {
+        font-size: 1rem;
+        margin: 2px 0 0 6px;
+    }
+    .header__btn--counseling {
+        height: 31px;
+        width: 173.7px;
+        display: flex;
+        align-items: flex-start;
+        border-radius: 30px;
+        margin:8% 0 0 -5%;
+        padding: 8px 0 0 11px;
+        background-color: #49C43D;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 1.2rem;
+        letter-spacing: 0.03em;
+    }
+    .btn--counseling-small {
+        padding: 2px 0 0 1px;
+        font-size: 1rem;
+        letter-spacing: 0.08em;
+    }
+    .icon-counseling {
+        font-size: 1rem;
+        margin: 3px 0 0 4px;
+    }
+}
+
+@media screen and (max-width: 389px) {
+    .header {
+        height: 40px;
+        width: 100%;
+    }
+    .header__logo img {
+        width: 55px;
+        height: 29px;
+        margin: 28% 0 0 20%;
+    }
+    .header__btn--inquiry {
+        height: 27px;
+        width: 90px;
+        margin:17% 0 0 -11%;
+        padding: 7px 0 0 3px;
+        font-size: 1rem;
+    }
+    .icon-inquiry {
+        font-size: .8rem;
+        margin: 2.5px 0 0 5px;
+    }
+    .header__btn--counseling {
+        height: 27px;
+        width: 150px;
+        margin:10% 0 0 -3%;
+        padding: 7px 0 0 12px;
+        font-size: 1rem;
+    }
+    .btn--counseling-small {
+        padding: 2px 0 0 1px;
+        font-size: .8rem;
+    }
+    .icon-counseling {
+        font-size: .8rem;
+        margin: 2.5px 0 0 6px;
+    }
+}
+
+@media screen and (min-width: 520px) and (max-width: 767px) {
+    .header__logo img {
+        margin: 15% 0 0 25%;
+    }
+    .header__btn--inquiry {
+        margin:13% 0 0 -30%;
+    }
+    .header__btn--counseling {
+        margin:8% 0 0 -12%;
+    }
+}
+
+
+/* カバー */
+@media screen and (max-width: 767px) {
+    .cover {
+        height: 100%;
+        width: 100%;
+        aspect-ratio: 390/ 314;
+        position: relative;
+        background-color: #FA7DA3;
+        margin-top: 56px;
+        z-index: 1;
+    }
+    .cover__img img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+    }
+}
+
+/* カバータイトル */
+@media screen and (max-width: 767px) {
+    .cover__title {
+        width: 100%;
+        height: auto;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .cover__title--left {
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+    .cover__title--left-main {
+        font-size: 4.19rem;
+        color: #FFFFFF;
+        margin: 5% 0 0 4.7%;
+    }
+    .cover__title--top-sub {
+        display: block;
+        font-size: 1.8rem;
+        color: #FFFFFF;
+        margin: 5px 0 0 26px;
+    }
+    .cover__title--right {
+        height: 107px;
+        width: 187px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 4px;
+        display: flex;
+        align-items: flex-start;
+        background-color: rgb(255, 255, 255, 0.3);
+        box-shadow: 3.5px 3.5px #00000040;
+        z-index: 100;
+    }
+    .cover__title--right-text {
+        height: 23px;
+        width: 47px;
+        margin: 25px 0 0 26px;
+        background-color: #FFFFFF;
+    }
+    .cover__title--text-first {
+        padding: 4px 0 0 4px;
+        font-size: 1.3rem;
+        color: #FA7DA3;
+    }
+    .cover__title--text-second {
+        width: 50px;
+        margin: 10px 0 0 1px;
+        font-size: 2.4rem;
+        color: #FFFFFF;
+    }
+    .cover__title--right-price {
+        display: flex;
+        align-items: flex-start;
+    }
+    .cover__title--price-first {
+        margin: 5px 0 0 12px;
+        font-size: 7.5rem;
+        font-weight: bold;
+        color: #FFFD7A;
+    }
+    .cover__title--price-second {
+        margin-top: 44px;
+        font-size: 3.6rem;
+        font-weight: bold;
+        color: #FFFD7A;
+    }
+    .cover__title-bottom {
+        font-family: 'Outfit', sans-serif;
+        position: absolute;
+        top: 93%;
+        right: 0;
+        margin: 32px 25px 0 0;
+        font-size: 1.4rem;
+        color: #FFFFFF;
+    }
+    .cover__title-bottom-small {
+        font-size: .9rem;
+    }
+    .cover__title--element {
+        position: absolute;
+        top: 170%;
+        right: 6.7%;
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 1.8rem;
+    }
+    .cover__title--element-first {
+        height: 35px;
+        width: 132.5px;
+        margin-bottom: 12px;
+        padding: 5px 0 0 30px;
+        border: 1px solid #FFFFFF;
+    }
+    .cover__title--element-second {
+        height: 35px;
+        width: 132.5px;
+        margin-bottom: 12px;
+        padding: 5px 0 0 12px;
+        border: 1px solid #FFFFFF;
+    }
+    .cover__title--element-third {
+        height: 35px;
+        width: 132.5px;
+        margin-bottom: 12px;
+        padding: 5px 0 0 12px;
+        border: 1px solid #FFFFFF;
+    }
+}
+
+
+@media screen and (max-width: 389px) {
+    .cover {
+        margin-top: 53px;
+    }
+    .cover__title--left-main {
+        font-size: 3.5rem;
+        margin: 5% 0 0 3%;
+    }
+    .cover__title--top-sub {
+        font-size: 1.4rem;
+        margin: 5px 0 0 30px;
+    }
+    .cover__title--right {
+        height: 90px;
+        width: 160px;
+        margin-top: 0;
+    }
+    .cover__title--right-text {
+        height: 20px;
+        width: 44px;
+        margin: 19px 0 0 20px;
+    }
+    .cover__title--text-first {
+        padding: 3px 0 0 5px;
+        font-size: 1.1rem;
+    }
+    .cover__title--text-second {
+        margin: 10px 0 0 1px;
+        font-size: 2.2rem;
+    }
+    .cover__title--price-first {
+        margin: 2px 0 0 11px;
+        font-size: 6.5rem;
+    }
+    .cover__title--price-second {
+        margin-top: 36px;
+        font-size: 3rem;
+    }
+    .cover__title-bottom {
+        margin: 26px 21px 0 0;
+        font-size: 1.2rem;
+    }
+    .cover__title-bottom-small {
+        font-size: .7rem;
+    }
+    .cover__title--element {
+        right: 7%;
+        font-size: 1.4rem;
+    }
+    .cover__title--element-first {
+        height: 30px;
+        width: 110px;
+        padding-left: 27px;
+    }
+    .cover__title--element-second {
+        height: 30px;
+        width: 110px;
+        padding-left: 13px;
+    }
+    .cover__title--element-third {
+        height: 30px;
+        width: 110px;
+        padding-left: 13px;
+    }
+}
+
+@media screen and (min-width: 520px) and (max-width: 767px) {
+    .cover__title--left-main {
+        font-size: 6rem;
+        margin: 5% 0 0 3%;
+    }
+    .cover__title--top-sub {
+        font-size: 2.2rem;
+        margin: 5px 0 0 30px;
+    }
+    .cover__title--right {
+        height: 135px;
+        width: 230px;
+        margin-top: 0;
+    }
+    .cover__title--right-text {
+        height: 30px;
+        width: 61px;
+        margin: 32px 0 0 26px;
+    }
+    .cover__title--text-first {
+        padding: 5px 0 0 6px;
+        font-size: 1.6rem;
+    }
+    .cover__title--text-second {
+        margin-top: 14px;
+        font-size: 3rem;
+    }
+    .cover__title--price-first {
+        margin: 6px 0 0 17px;
+        font-size: 9.5rem;
+    }
+    .cover__title--price-second {
+        margin-top: 55px;
+        font-size: 4.6rem;
+    }
+    .cover__title-bottom {
+        font-size: 1.8rem;
+    }
+    .cover__title-bottom-small {
+        font-size: 1.1rem;
+    }
+    .cover__title--element {
+        position: absolute;
+        top: 170%;
+        right: 6.7%;
+
+        font-size: 2.2rem;
+    }
+    .cover__title--element-first {
+        height: 40px;
+        width: 170px;
+        margin-bottom: 15px;
+        padding: 5.5px 0 0 40px;
+    }
+    .cover__title--element-second {
+        height: 40px;
+        width: 170px;
+        margin-bottom: 15px;
+        padding: 5.5px 0 0 19px;
+    }
+    .cover__title--element-third {
+        height: 40px;
+        width: 170px;
+        margin-bottom: 15px;
+        padding: 5px 0 0 19px;
+    }
+}
+
+/* 消す */
+@media screen and (max-width: 767px) {
+    .point__content--second img {
+        width: 100px;
+        height: 100px;
+    }
+}

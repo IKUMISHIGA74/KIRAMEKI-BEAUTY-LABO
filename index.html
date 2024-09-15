@@ -26,26 +26,37 @@
         </h1>
         <ul class="header__btn">
             <li>
-                <a class="btn header__btn--inquiry" href="/contact/" role="button">お問い合わせ<i class="fas fa-chevron-right"></i></a>
+                <a class="btn header__btn--inquiry" href="/contact/" role="button">お問い合わせ<i class="fas fa-chevron-right icon-inquiry"></i></a>
             </li>
             <li>
-                <a class="btn header__btn--counseling" href="/reservation/" role="button">カウンセリング予約(無料)<i class="fas fa-chevron-right"></i></a>
+                <a class="btn header__btn--counseling" href="/reservation/" role="button">カウンセリング予約<span class="btn--counseling-small">(無料)</span><i class="fas fa-chevron-right icon-counseling"></i></a>
             </li>
         </ul>
     </header>
 
     <!-- カバー -->
     <div class="cover">
-        <img src="assets/image/woman_01.png" alt="">
+        <picture class="cover__img">
+            <source srcset="assets/image/woman_01.png" media="(max-width: 767px)"><!-- SP表示 -->
+            <img src="assets/image/woman_02.png" alt=""><!-- PC表示 -->
+        </picture>
         <!-- カバー タイトル -->
         <div class="cover__title">
-            <div class="cover__title--top">
-                <p class="cover__title--top-left">全身脱毛<span class="cover__title--top-sub">（顔・VIO込）</span></p>
-                <div class="cover__title--top-right">
-                    <p class="cover__title-right-first">今だけ<span class="cover__title-right-second">初月</span><span class="cover__title-right-third">0円</span></p>
-                </div>
-                <p class="cover__title--top-bottom">2,480円／月</p>
+            <div class="cover__title--left">
+                <p class="cover__title--left-main">全身脱毛<span class="cover__title--top-sub">（顔・VIO込）</span></p>
             </div>
+            <div class="cover__title--right">
+                <div class="cover__title--right-text">
+                    <div class="cover__title--text-box">
+                        <p class="cover__title--text-first">今だけ</p>
+                    </div>
+                    <p class="cover__title--text-second">初月</p>
+                </div>
+                <div class="cover__title--right-price">
+                    <p class="cover__title--price-first">0</p><span class="cover__title--price-second">円</span>
+                </div>
+            </div>
+            <p class="cover__title-bottom">2,480<span class="cover__title-bottom-small">円／月</span></p>
             <ul class="cover__title--element">
                 <li class="cover__title--element-first">通い放題</li>
                 <li class="cover__title--element-second">追加料金なし</li>
@@ -204,7 +215,7 @@
                 <div class="voice__item-main">
                     <img src="assets/image/voice_01.png" alt="">
                     <div class="voice__item-text">
-                        <p class="voice__item-text-profile">20代 R.Bさま/大学生</p>
+                        <p class="voice__item-text-profile">20代R.Bさま/大学生</p>
                         <p class="voice__item-text-p">ここにコピーが入ります。ここにコピーが入ります。ここにコピーが入ります。ここにコピーが入ります。</p>
                     </div>
                 </div>
@@ -214,7 +225,7 @@
                 <div class="voice__item-main">
                     <img src="assets/image/voice_02.png" alt="">
                     <div class="voice__item-text">
-                        <p class="voice__item-text-profile">30代 N.Tさま/会社員</p>
+                        <p class="voice__item-text-profile">30代N.Tさま/会社員</p>
                         <p class="voice__item-text-p">納得いくまで何度も、追加料金なく安心して通うことができて大変満足しています。</p>
                     </div>
                 </div>
@@ -224,7 +235,7 @@
                 <div class="voice__item-main">
                     <img src="assets/image/voice_03.png" alt="">
                     <div class="voice__item-text">
-                        <p class="voice__item-text-profile">20代 Y.Kさま/会社員</p>
+                        <p class="voice__item-text-profile">20代Y.Kさま/会社員</p>
                         <p class="voice__item-text-p">ここにコピーが入ります。ここにコピーが入ります。ここにコピーが入ります。ここにコピーが入ります。</p>
                     </div>
                 </div>
