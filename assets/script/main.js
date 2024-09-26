@@ -9,7 +9,7 @@ $('.voice__list').slick({
     slidesToScroll: 1,
     responsive: [
         {
-            breakpoint: 767,
+            breakpoint: 1000,
                 settings: {
                 arrows: false,
                 centerMode: true,

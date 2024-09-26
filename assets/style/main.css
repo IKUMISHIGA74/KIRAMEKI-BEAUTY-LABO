@@ -48,6 +48,10 @@ body {
         color: #FFFFFF;
         font-size: 1.2rem;
         letter-spacing: 0.03em;
+        transition: all 0.5s ease-in-out;
+    }
+    .header__btn--inquiry:hover {
+        opacity: 0.4; 
     }
     .icon-inquiry {
         font-size: 1rem;
@@ -66,6 +70,10 @@ body {
         color: #FFFFFF;
         font-size: 1.2rem;
         letter-spacing: 0.03em;
+        transition: all 0.5s ease-in-out;
+    }
+    .header__btn--counseling:hover {
+        opacity: 0.4; 
     }
     .btn--counseling-small {
         padding: 2px 0 0 1px;
@@ -117,6 +125,9 @@ body {
 }
 
 @media screen and (min-width: 520px) and (max-width: 767px) {
+    .header__box {
+        max-width: 520px;
+    }
     .header__logo img {
         margin: 15% 0 0 25%;
     }
@@ -513,6 +524,10 @@ body {
         color: #FFFFFF;
         font-size: 2.1rem;
         letter-spacing: 0.1em;
+        transition: all 0.5s ease-in-out;
+    }
+    .banner__btn:hover {
+        opacity: 0.4; 
     }
     .banner-text-first {
         display: flex;
@@ -1148,7 +1163,7 @@ body {
 }
 
 /* お客様の声 */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 999px) {
     .voice {
         background-color: #FDF0F5;
         padding-bottom: 23px;
@@ -1200,7 +1215,7 @@ body {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 999px) {
     .voice__list--item {
         padding: 0 5px 0 9px;
     }
@@ -1253,7 +1268,7 @@ body {
 /* 予約バナー3 */
 @media screen and (max-width: 767px) {
     .banner--third {
-        padding: 13px 0 43px 0; /* 調整 */
+        padding: 13px 0 43px 0;
     }
 }
 
@@ -1316,6 +1331,10 @@ body {
         text-decoration: none;
         color: #FFFFFF;
         font-size: 2.1rem;
+        transition: all 0.5s ease-in-out;
+    }
+    .header__btn--inquiry:hover {
+        opacity: 0.4; 
     }
     .icon-inquiry {
         font-size: 1.9rem;
@@ -1333,6 +1352,10 @@ body {
         text-decoration: none;
         color: #FFFFFF;
         font-size: 2.1rem;
+        transition: all 0.5s ease-in-out;
+    }
+    .header__btn--counseling:hover {
+        opacity: 0.4; 
     }
     .btn--counseling-small {
         padding-top: 4px;
@@ -1483,6 +1506,62 @@ body {
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1000px){
+    .cover__title--left-main {
+        font-size: 8rem;
+    }
+    .cover__title--top-sub {
+        font-size: 3.2rem;
+        margin-left: 110px;
+    }
+    .cover__title--right {
+        height: 180px;
+        width: 350px;
+    }
+    .cover__title--right-text {
+        height: 40px;
+        width: 100px;
+        margin: 27px 0 0 34px;
+    }
+    .cover__title--text-first {
+        padding: 5px 0 0 12px;
+        font-size: 2.4rem;
+    }
+    .cover__title--text-second {
+        margin-left: 5px;
+        font-size: 4.8rem;
+    }
+    .cover__title--price-first {
+        margin-left: 18px;
+        font-size: 15rem;
+    }
+    .cover__title--price-second {
+        margin-top: 83px;
+        font-size: 6rem;
+    }
+    .cover__title-bottom {
+        margin: 49px 46px 0 0;
+    }
+    .cover__title--element {
+        font-size: 2.2rem;
+    }
+    .cover__title--element-first {
+        height: 55px;
+        width: 320px;
+        padding: 12px 0 0 117px;
+    }
+    .cover__title--element-second {
+        height: 55px;
+        width: 320px;
+        padding: 12px 0 0 98px;
+    }
+    .cover__title--element-third {
+        height: 55px;
+        width: 320px;
+        padding: 12px 0 0 101px;
+    }
+}
+
 /* キャンペーン */
 @media screen and (min-width: 768px) {
     .campaign {
@@ -1595,6 +1674,10 @@ body {
         font-weight: bold;
         font-size: 3.4rem;
         letter-spacing: 0.1em;
+        transition: all 0.5s ease-in-out;
+    }
+    .banner__btn:hover {
+        opacity: 0.4; 
     }
     .banner-text-first {
         display: flex;
@@ -1663,6 +1746,15 @@ body {
     .experience__small-left {
         display: inline-block;
         transform: translateX(1px);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px){
+    .experience__list {
+        max-width: 700px;
+    }
+    .experience__list-item {
+        margin-left: 57px;
     }
 }
 
@@ -1947,6 +2039,42 @@ body {
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 800px){
+    .point__content--first-title {
+        width: 700px;
+    }
+    .point__content--first-box {
+        width: 700px;
+        padding-left: 26px;
+    }
+    .point__content-element-img {
+        margin-left: 72px;
+    }
+    .point__content-element-p {
+        padding-left: 105.5px;
+    }
+    .point__content--second-title {
+        width: 700px;
+    }
+    .point__content--second-box {
+        width: 700px;
+    }
+    .point__content-body-img img {
+        margin-left: -39px;
+    }
+    .point__content-element-portion {
+        padding-left: 0px;
+        margin-left: -24px;
+    }
+    .point__content--third-title {
+        width: 700px;
+    }
+    .point__content--third-text {
+        width: 700px;
+        padding-left: 50px;
+    }
+}
+
 /* 2つのコース */
 @media screen and (min-width: 768px) {
     .course {
@@ -2093,7 +2221,7 @@ body {
 }
 
 /* お客様の声 */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
     .voice {
         max-width: 1030px;
         background-color: #FDF0F5;
@@ -2135,7 +2263,7 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
     .voice__list--item {
         padding: 0 5px 0 9px;
     }
